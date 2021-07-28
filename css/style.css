@@ -2,107 +2,116 @@
 	padding: 2px;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: urban;
 }
-.header-section{
-	width: 100%;
-	height: 75px;
+
+.hero-section .heading{
 	color: #000;
-	margin: 5px;
+	font-size: 35px;
+	list-style: 80px;
+	/*padding: 8px 100px;*/
+	font-weight: bold;
+	align-items: center;
 }
-.menu-item .logo{
-	padding: 27px;
+/*navibar*/
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  float: right;
+  text-align: right;
+  align-items: center;
 }
-.menu-item.logo a{
-	padding: 20px;
-	display: inline-block;
-}
-img{
-		max-width: 100%;
-		vertical-align: middle;
-		border-style: none;
-}
-.menu-item .nav-menu{
+
+.topnav a {
 	text-align: right;
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  /*text-decoration: none;*/
+  font-size: 17px;
 }
-.menu-item .nav-menu .mainmenu{
-	display: inline-block;
+
+.topnav a:hover {
+  border-bottom: 2px solid #000;
 }
-.menu-item .nav-menu .mainmenu li{
-	list-style: none;
-	display: inline-block;
-	position: relative;
-	z-index: 1;
+
+.active {
+  background-color: #dfa974;
+  color: white;
 }
-.menu-item .nav-menu .mainmenu li a:hover{
-	top: 10%;
-	background-color: #727272;
-	color: #fff;
-	border-bottom: 5px solid #dfa974;
-	cursor: context-menu;
+
+.topnav .icon {
+  display: none;
+  color: #000;
 }
-.menu-item .nav-menu .mainmenu li a{
-	    font-size: 16px;
-    color: #19191a;
-    margin-right: 42px;
-    font-weight: 500;
-    display: inline-block;
-    /*padding: 27px 0;*/
-    position: relative;
-    text-decoration: none;
-    transition: all 0.8s ease;
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .hero-section{
+  	padding-top: 50%;
+  }
 }
-.menu-item .nav-menu .nav-right {
-    display: inline-block;
-    margin-left: 43px;
-    padding: 27px 0;
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    color: #000;
+    text-align: left;
+  }
+  .hero-section{
+  	padding-top: 50%;
+  }
 }
-.menu-item .nav-menu .nav-right i {
-    font-size: 16px;
-    color: #19191a;
-    cursor: pointer;
-}
-.arrow_left, .arrow_right, .icon_close, .icon_check, .icon_search, .icon_menu, .icon_clock_alt, .icon_calendar, .icon_star-half_alt, .icon_star, .icon_profile {
-    font-family: 'ElegantIcons';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-}
+/*-navbar-*/
 .hero-section{
-	position: relative;
-    padding-top: 60px;
     padding-bottom: 100px;
 }
 .hero-section .carousel-caption{
-	top: 40%;
 	left: 5%;
 }
+@media screen and (max-width: 415){
+	.hero-section .carousel-caption{
+		top: 10%;
+	}
+}
+.hero-section .carousel-caption .img-fluid{
+	width: fit-content;
+}
 .hero-section .carousel-caption h5{
-	font-size: 50px;
+	font-size: auto;
 }
 .hero-section .carousel-caption p{
-	font-size: 30px;
+	font-size: auto;
+	text-align: center;
 }
 .hero-section .carousel-caption a{
 	text-decoration: none;
 	color: #fff;
 	border-bottom: 3px solid #dfa974;
 }
-.media-section{
-	padding: 100px;
-}
+
 .about-section p{
 	background-color: #000;
 	color: #fff;
-	font-size: 2rem;
+	font-size: 100%;
 	padding: 15px;
 	font-family: 'Uchen', serif;
 }
 .presence-section{
-	padding: 100px;
+	padding: 10%;
 }
 .presence-section .heading{
 	text-align: center;
@@ -116,7 +125,7 @@ img{
 	padding-left: 10%;
 }
 .presence-section .slide .carousel{
-	width: 80%;
+	/*width: 80%;*/
 	text-align: center;
 }
 .client-section .heading{
@@ -127,6 +136,9 @@ img{
 }
 .client-section .heading h2{
 	color: #dfa974;
+}
+.client-section .table-content{
+	padding-left: 20%;
 }
 .conent .row{
 	flex-direction: row;
@@ -195,9 +207,7 @@ img{
 }
 .gallery-section .heading{
 	position: absolute;
-	left: 40%;
 	color: #fff;
-	font-size: 60px;
 	/*top: 25%;*/
 	font-family: urban;
 	text-shadow: 3px 5px 5px #000;
@@ -229,11 +239,20 @@ img{
 }
 .advanture-section{
 	position: static;
-	padding-top: 65%;
+	padding-top: 70%;
 
 }
 
-
+@media screen and (max-width: 320px){
+	.advanture-section{
+		padding-top: 85%;
+	}
+}
+@media screen and (max-width: 320px){
+	.advanture-section{
+		padding-top: 90%;
+	}
+}
 
 /*About section*/
 .abouthotel-section, .contact-section{
@@ -271,3 +290,13 @@ img{
 	border-radius: 10px;
 	background: transparent;
 	padding-left: 10px;
+}
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
