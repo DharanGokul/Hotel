@@ -1,0 +1,273 @@
+*{
+	padding: 2px;
+	margin: 0;
+	box-sizing: border-box;
+}
+.header-section{
+	width: 100%;
+	height: 75px;
+	color: #000;
+	margin: 5px;
+}
+.menu-item .logo{
+	padding: 27px;
+}
+.menu-item.logo a{
+	padding: 20px;
+	display: inline-block;
+}
+img{
+		max-width: 100%;
+		vertical-align: middle;
+		border-style: none;
+}
+.menu-item .nav-menu{
+	text-align: right;
+}
+.menu-item .nav-menu .mainmenu{
+	display: inline-block;
+}
+.menu-item .nav-menu .mainmenu li{
+	list-style: none;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+}
+.menu-item .nav-menu .mainmenu li a:hover{
+	top: 10%;
+	background-color: #727272;
+	color: #fff;
+	border-bottom: 5px solid #dfa974;
+	cursor: context-menu;
+}
+.menu-item .nav-menu .mainmenu li a{
+	    font-size: 16px;
+    color: #19191a;
+    margin-right: 42px;
+    font-weight: 500;
+    display: inline-block;
+    /*padding: 27px 0;*/
+    position: relative;
+    text-decoration: none;
+    transition: all 0.8s ease;
+}
+.menu-item .nav-menu .nav-right {
+    display: inline-block;
+    margin-left: 43px;
+    padding: 27px 0;
+}
+.menu-item .nav-menu .nav-right i {
+    font-size: 16px;
+    color: #19191a;
+    cursor: pointer;
+}
+.arrow_left, .arrow_right, .icon_close, .icon_check, .icon_search, .icon_menu, .icon_clock_alt, .icon_calendar, .icon_star-half_alt, .icon_star, .icon_profile {
+    font-family: 'ElegantIcons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.hero-section{
+	position: relative;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.hero-section .carousel-caption{
+	top: 40%;
+	left: 5%;
+}
+.hero-section .carousel-caption h5{
+	font-size: 50px;
+}
+.hero-section .carousel-caption p{
+	font-size: 30px;
+}
+.hero-section .carousel-caption a{
+	text-decoration: none;
+	color: #fff;
+	border-bottom: 3px solid #dfa974;
+}
+.media-section{
+	padding: 100px;
+}
+.about-section p{
+	background-color: #000;
+	color: #fff;
+	font-size: 2rem;
+	padding: 15px;
+	font-family: 'Uchen', serif;
+}
+.presence-section{
+	padding: 100px;
+}
+.presence-section .heading{
+	text-align: center;
+}
+.presence-section .heading h2{
+	color: #dfa974;
+}
+.presence-section .slide{
+	/*width: 400px;*/
+	padding-top: 30px;
+	padding-left: 10%;
+}
+.presence-section .slide .carousel{
+	width: 80%;
+	text-align: center;
+}
+.client-section .heading{
+	padding-left: 40%;
+}
+.client-section .heading h2,p{
+	text-align: left;
+}
+.client-section .heading h2{
+	color: #dfa974;
+}
+.conent .row{
+	flex-direction: row;
+	padding-top: 90px;
+}
+.conent .row .para h5{
+	color: #dfa974;
+}
+.footer-section{
+	padding-top: 100px;
+	background-color: #6e7381;
+}
+.footer-section .row{
+	padding-left: 80px;
+	justify-content: space-between
+}
+.footer-section .row .links h6{
+	color: #fff;
+}
+.footer-section .row .links i{
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	/*border: 2px solid #000;*/
+}
+.footer-section .row .newsletter{
+	padding-left: 100px;
+}
+.footer-section .row .newsletter p{
+	color: #fff;
+}
+.footer-section .row .newsletter .submit{
+	width: 100px;
+	background-color: transparent;
+	border: 1px solid #393d4a;
+	height: 50px;
+}
+.footer-section .row .newsletter .email{
+	width: 95%;
+    height: 50px;
+    border-radius: 2px;
+    background: #cbcbcb;
+    border: none;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #707079;
+}
+.footer-section .row h5{
+	padding-left: 10px;
+	color: #dfa974;
+}
+.footer-section .row h6 a{
+	text-decoration: none;
+	color: #fff;
+}
+.footer-section .row a{
+	color: #000;
+	text-decoration: none;
+}
+
+
+
+/*Gallery Page*/
+.gallery-section{
+	padding: 40px;
+}
+.gallery-section .heading{
+	position: absolute;
+	left: 40%;
+	color: #fff;
+	font-size: 60px;
+	/*top: 25%;*/
+	font-family: urban;
+	text-shadow: 3px 5px 5px #000;
+}
+.gallery-section img{
+	 box-shadow: 10px 10px 5px #ccc;
+}
+.college-section{
+	width: 100%;
+	position: static;
+}
+.college-section .college{
+	width: 80%;
+	padding: 10px 116px 0px 0px;
+	float: right;
+	/*border: 2px solid #000;*/
+}
+.college-section .college .college-row .row{
+	padding: 10px;
+}
+.college-section .college .college-row{
+	border: 1px solid #000;
+	border-top: none;
+}
+.college-section .college .college-row input{
+	background: transparent;
+	color: #dfa974;
+	border: 2px solid #dfa974;
+}
+.advanture-section{
+	position: static;
+	padding-top: 65%;
+
+}
+
+
+
+/*About section*/
+.abouthotel-section, .contact-section{
+	padding-top: 20px;
+	font-family: urban;
+	/*font-weight: 500;*/
+}
+.abouthotel-section h2, .food-section h2, .staff-section h2{
+	font-weight: bold;
+}
+.food-section, .staff-section{
+	padding-top: 20px;
+	font-family: urban;
+}
+
+
+
+/*Contact page*/
+.contact-section p{
+	padding-left: 10px;
+}
+.contact-section .btn{
+	border: 1px solid #dfa974;
+	background: transparent;
+	box-shadow: 3px 3px 5px #dfa974;
+}
+.form{
+	padding-top: 20px;
+	padding-left: 50px;
+	font-family: cursive;
+}
+.form .btn{
+	padding-top: 10px;
+	border: 1px solid #dfa974;
+	border-radius: 10px;
+	background: transparent;
+	padding-left: 10px;
