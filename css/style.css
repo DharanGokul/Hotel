@@ -16,6 +16,7 @@
 /*navibar*/
 .topnav {
   overflow: hidden;
+  width: 100%;
   background-color: #fff;
   float: right;
   text-align: right;
